@@ -1,0 +1,4 @@
+xcuserdata
+*.framework
+*.embeddedframework
+Pods/

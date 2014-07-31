@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C6B6F5819899CC9000777F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F5719899CC9000777F6 /* Foundation.framework */; };
+		7C6B6F5A19899CC9000777F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F5919899CC9000777F6 /* CoreGraphics.framework */; };
+		7C6B6F5C19899CC9000777F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F5B19899CC9000777F6 /* UIKit.framework */; };
+		7C6B6F6219899CC9000777F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C6B6F6019899CC9000777F6 /* InfoPlist.strings */; };
+		7C6B6F6419899CC9000777F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B6F6319899CC9000777F6 /* main.m */; };
+		7C6B6F6819899CC9000777F6 /* JPPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B6F6719899CC9000777F6 /* JPPAppDelegate.m */; };
+		7C6B6F6A19899CC9000777F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6B6F6919899CC9000777F6 /* Images.xcassets */; };
+		7C6B6F8A19899EDC000777F6 /* JPPTemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B6F8819899EDC000777F6 /* JPPTemperatureViewController.m */; };
+		7C6B6F8B19899EDC000777F6 /* JPPTemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C6B6F8919899EDC000777F6 /* JPPTemperatureViewController.xib */; };
+		7C6B6F8F19899F7A000777F6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F8C19899F7A000777F6 /* CoreBluetooth.framework */; };
+		7C6B6F9019899F7A000777F6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F8D19899F7A000777F6 /* CoreData.framework */; };
+		7C6B6F9119899F7A000777F6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F8E19899F7A000777F6 /* CoreLocation.framework */; };
+		7C6B6F9319899F83000777F6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F9219899F83000777F6 /* libz.dylib */; };
+		7C6B6F9519899F8B000777F6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F9419899F8B000777F6 /* MapKit.framework */; };
+		7C6B6F9719899F93000777F6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F9619899F93000777F6 /* Security.framework */; };
+		7C6B6FA619899FB2000777F6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F9919899FB2000777F6 /* Common.framework */; };
+		7C6B6FA719899FB2000777F6 /* ContextCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F9C19899FB2000777F6 /* ContextCore.framework */; };
+		7C6B6FA819899FB2000777F6 /* ContextLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6F9F19899FB2000777F6 /* ContextLocation.framework */; };
+		7C6B6FA919899FB2000777F6 /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C6B6FA119899FB2000777F6 /* DataModels.bundle */; };
+		7C6B6FAA19899FB2000777F6 /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6FA219899FB2000777F6 /* FYX.framework */; };
+		7C6B6FAB19899FB2000777F6 /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B6FA419899FB2000777F6 /* NetworkServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C6B6F5419899CC9000777F6 /* Temperature Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Temperature Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6B6F5719899CC9000777F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7C6B6F5919899CC9000777F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7C6B6F5B19899CC9000777F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7C6B6F5F19899CC9000777F6 /* Temperature Monitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Temperature Monitor-Info.plist"; sourceTree = "<group>"; };
+		7C6B6F6119899CC9000777F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C6B6F6319899CC9000777F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C6B6F6519899CC9000777F6 /* Temperature Monitor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Temperature Monitor-Prefix.pch"; sourceTree = "<group>"; };
+		7C6B6F6619899CC9000777F6 /* JPPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPPAppDelegate.h; sourceTree = "<group>"; };
+		7C6B6F6719899CC9000777F6 /* JPPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPPAppDelegate.m; sourceTree = "<group>"; };
+		7C6B6F6919899CC9000777F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7C6B6F7019899CC9000777F6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7C6B6F8619899D64000777F6 /* JPPConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPPConstants.h; sourceTree = "<group>"; };
+		7C6B6F8719899EDC000777F6 /* JPPTemperatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPPTemperatureViewController.h; sourceTree = "<group>"; };
+		7C6B6F8819899EDC000777F6 /* JPPTemperatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPTemperatureViewController.m; sourceTree = "<group>"; };
+		7C6B6F8919899EDC000777F6 /* JPPTemperatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPPTemperatureViewController.xib; sourceTree = "<group>"; };
+		7C6B6F8C19899F7A000777F6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		7C6B6F8D19899F7A000777F6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7C6B6F8E19899F7A000777F6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7C6B6F9219899F83000777F6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7C6B6F9419899F8B000777F6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7C6B6F9619899F93000777F6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7C6B6F9919899FB2000777F6 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		7C6B6F9C19899FB2000777F6 /* ContextCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextCore.framework; sourceTree = "<group>"; };
+		7C6B6F9F19899FB2000777F6 /* ContextLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextLocation.framework; sourceTree = "<group>"; };
+		7C6B6FA119899FB2000777F6 /* DataModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DataModels.bundle; sourceTree = "<group>"; };
+		7C6B6FA219899FB2000777F6 /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FYX.framework; sourceTree = "<group>"; };
+		7C6B6FA419899FB2000777F6 /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C6B6F5119899CC9000777F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6B6F9719899F93000777F6 /* Security.framework in Frameworks */,
+				7C6B6F9519899F8B000777F6 /* MapKit.framework in Frameworks */,
+				7C6B6FAA19899FB2000777F6 /* FYX.framework in Frameworks */,
+				7C6B6F9319899F83000777F6 /* libz.dylib in Frameworks */,
+				7C6B6FA819899FB2000777F6 /* ContextLocation.framework in Frameworks */,
+				7C6B6F8F19899F7A000777F6 /* CoreBluetooth.framework in Frameworks */,
+				7C6B6FA719899FB2000777F6 /* ContextCore.framework in Frameworks */,
+				7C6B6F9019899F7A000777F6 /* CoreData.framework in Frameworks */,
+				7C6B6F9119899F7A000777F6 /* CoreLocation.framework in Frameworks */,
+				7C6B6FAB19899FB2000777F6 /* NetworkServices.framework in Frameworks */,
+				7C6B6F5A19899CC9000777F6 /* CoreGraphics.framework in Frameworks */,
+				7C6B6FA619899FB2000777F6 /* Common.framework in Frameworks */,
+				7C6B6F5C19899CC9000777F6 /* UIKit.framework in Frameworks */,
+				7C6B6F5819899CC9000777F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C6B6F4B19899CC9000777F6 = {
+			isa = PBXGroup;
+			children = (
+				7C6B6F5D19899CC9000777F6 /* Temperature Monitor */,
+				7C6B6F5619899CC9000777F6 /* Frameworks */,
+				7C6B6F5519899CC9000777F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C6B6F5519899CC9000777F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B6F5419899CC9000777F6 /* Temperature Monitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C6B6F5619899CC9000777F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B6F9819899FB2000777F6 /* Common.embeddedframework */,
+				7C6B6F9B19899FB2000777F6 /* ContextCore.embeddedframework */,
+				7C6B6F9E19899FB2000777F6 /* ContextLocation.embeddedframework */,
+				7C6B6FA219899FB2000777F6 /* FYX.framework */,
+				7C6B6FA319899FB2000777F6 /* NetworkServices.embeddedframework */,
+				7C6B6F9619899F93000777F6 /* Security.framework */,
+				7C6B6F9419899F8B000777F6 /* MapKit.framework */,
+				7C6B6F9219899F83000777F6 /* libz.dylib */,
+				7C6B6F8C19899F7A000777F6 /* CoreBluetooth.framework */,
+				7C6B6F8D19899F7A000777F6 /* CoreData.framework */,
+				7C6B6F8E19899F7A000777F6 /* CoreLocation.framework */,
+				7C6B6F5719899CC9000777F6 /* Foundation.framework */,
+				7C6B6F5919899CC9000777F6 /* CoreGraphics.framework */,
+				7C6B6F5B19899CC9000777F6 /* UIKit.framework */,
+				7C6B6F7019899CC9000777F6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C6B6F5D19899CC9000777F6 /* Temperature Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B6F8619899D64000777F6 /* JPPConstants.h */,
+				7C6B6F6619899CC9000777F6 /* JPPAppDelegate.h */,
+				7C6B6F6719899CC9000777F6 /* JPPAppDelegate.m */,
+				7C6B6F8719899EDC000777F6 /* JPPTemperatureViewController.h */,
+				7C6B6F8819899EDC000777F6 /* JPPTemperatureViewController.m */,
+				7C6B6F8919899EDC000777F6 /* JPPTemperatureViewController.xib */,
+				7C6B6F6919899CC9000777F6 /* Images.xcassets */,
+				7C6B6F5E19899CC9000777F6 /* Supporting Files */,
+			);
+			path = "Temperature Monitor";
+			sourceTree = "<group>";
+		};
+		7C6B6F5E19899CC9000777F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B6F5F19899CC9000777F6 /* Temperature Monitor-Info.plist */,
+				7C6B6F6019899CC9000777F6 /* InfoPlist.strings */,
+				7C6B6F6319899CC9000777F6 /* main.m */,
+				7C6B6F6519899CC9000777F6 /* Temperature Monitor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C6B6F9819899FB2000777F6 /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B6F9919899FB2000777F6 /* Common.framework */,
+				7C6B6F9A19899FB2000777F6 /* Resources */,
+			);
+			path = Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		7C6B6F9A19899FB2000777F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C6B6F9B19899FB2000777F6 /* ContextCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B6F9C19899FB2000777F6 /* ContextCore.framework */,
+				7C6B6F9D19899FB2000777F6 /* Resources */,
+			);
+			path = ContextCore.embeddedframework;
+			sourceTree = "<group>";
+		};
+		7C6B6F9D19899FB2000777F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C6B6F9E19899FB2000777F6 /* ContextLocation.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B6F9F19899FB2000777F6 /* ContextLocation.framework */,
+				7C6B6FA019899FB2000777F6 /* Resources */,
+			);
+			path = ContextLocation.embeddedframework;
+			sourceTree = "<group>";
+		};
+		7C6B6FA019899FB2000777F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B6FA119899FB2000777F6 /* DataModels.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C6B6FA319899FB2000777F6 /* NetworkServices.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B6FA419899FB2000777F6 /* NetworkServices.framework */,
+				7C6B6FA519899FB2000777F6 /* Resources */,
+			);
+			path = NetworkServices.embeddedframework;
+			sourceTree = "<group>";
+		};
+		7C6B6FA519899FB2000777F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C6B6F5319899CC9000777F6 /* Temperature Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C6B6F8019899CC9000777F6 /* Build configuration list for PBXNativeTarget "Temperature Monitor" */;
+			buildPhases = (
+				7C6B6F5019899CC9000777F6 /* Sources */,
+				7C6B6F5119899CC9000777F6 /* Frameworks */,
+				7C6B6F5219899CC9000777F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Temperature Monitor";
+			productName = "Temperature Monitor";
+			productReference = 7C6B6F5419899CC9000777F6 /* Temperature Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C6B6F4C19899CC9000777F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JPP;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					7C6B6F5319899CC9000777F6 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7C6B6F4F19899CC9000777F6 /* Build configuration list for PBXProject "Temperature Monitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7C6B6F4B19899CC9000777F6;
+			productRefGroup = 7C6B6F5519899CC9000777F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C6B6F5319899CC9000777F6 /* Temperature Monitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C6B6F5219899CC9000777F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6B6F8B19899EDC000777F6 /* JPPTemperatureViewController.xib in Resources */,
+				7C6B6F6219899CC9000777F6 /* InfoPlist.strings in Resources */,
+				7C6B6F6A19899CC9000777F6 /* Images.xcassets in Resources */,
+				7C6B6FA919899FB2000777F6 /* DataModels.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C6B6F5019899CC9000777F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6B6F6419899CC9000777F6 /* main.m in Sources */,
+				7C6B6F6819899CC9000777F6 /* JPPAppDelegate.m in Sources */,
+				7C6B6F8A19899EDC000777F6 /* JPPTemperatureViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C6B6F6019899CC9000777F6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C6B6F6119899CC9000777F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C6B6F7E19899CC9000777F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7C6B6F7F19899CC9000777F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C6B6F8119899CC9000777F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Temperature Monitor/Temperature Monitor-Prefix.pch";
+				INFOPLIST_FILE = "Temperature Monitor/Temperature Monitor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7C6B6F8219899CC9000777F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Temperature Monitor/Temperature Monitor-Prefix.pch";
+				INFOPLIST_FILE = "Temperature Monitor/Temperature Monitor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C6B6F4F19899CC9000777F6 /* Build configuration list for PBXProject "Temperature Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6B6F7E19899CC9000777F6 /* Debug */,
+				7C6B6F7F19899CC9000777F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C6B6F8019899CC9000777F6 /* Build configuration list for PBXNativeTarget "Temperature Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6B6F8119899CC9000777F6 /* Debug */,
+				7C6B6F8219899CC9000777F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C6B6F4C19899CC9000777F6 /* Project object */;
+}
